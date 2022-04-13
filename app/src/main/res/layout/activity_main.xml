@@ -137,7 +137,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="T or F ?"
+            android:text="W or L ?"
+            android:visibility="invisible"
             android:textSize="25dp"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -268,6 +269,16 @@
             app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
             app:layout_constraintVertical_bias="0.0" />
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="176dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_timer" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -301,6 +312,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:ems="10"
+                android:enabled="true"
                 android:inputType="textPersonName"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
